@@ -1,0 +1,3 @@
+Date:       Time        LogId                                   method          path  
+
+20240207	19:03:15	95cba104-9365-40e9-8cf4-7f4d5bc8edc3	GET	undefined	/
