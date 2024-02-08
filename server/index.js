@@ -15,7 +15,9 @@ app.use(logger);
 app.get('/', (req, res) => { 
     return res.status(200).json("hello there"); 
 }); 
-app.post('/register', require('./controllers/registerController').handleNewUser); 
+
+app.use('/register', require('./routes/register')); 
+
 mongoose.connection.once('open', () => { 
     console.log('connected to mongodb'); 
     app.listen(PORT, () => console.log(`server is running on port: ${PORT}`)); 
