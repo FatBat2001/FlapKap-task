@@ -17,7 +17,7 @@ const handleNewUser = async (req, res) => {
     const result = await User.create({
       username: username,
       password: hashedPwd,
-      roles: seller ? ROLES_LIST : {"Buyer":ROLES_LIST.Buyer},
+      roles: seller ? ROLES_LIST : { Buyer: ROLES_LIST.Buyer },
     });
 
     console.log(result);
@@ -27,4 +27,4 @@ const handleNewUser = async (req, res) => {
   }
 };
 
-module.exports = {handleNewUser};
+module.exports = { handleNewUser };
