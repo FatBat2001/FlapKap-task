@@ -7,9 +7,7 @@ Ensure you have [Node.js](https://nodejs.org/) (recent version) installed on you
 ### Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/yourproject.git
-```
+
 2. Navigate into the server directory
   ```bash
   cd flapkap-task\server
