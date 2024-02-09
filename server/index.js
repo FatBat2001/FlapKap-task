@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
 
 app.use('/register', require('./routes/register')); 
 app.use('/login', require('./routes/login')); 
+app.use('/logout', require('./routes/logout')); 
 app.use('/product', require('./routes/product')); 
 
 app.get('/test', verifyJWT, (req, res) =>  { 

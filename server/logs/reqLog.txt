@@ -136,3 +136,10 @@ Date:       Time        LogId                                   method          
 20240209	05:28:33	e3cd93bd-d68f-431f-b5b5-89072255251d	POST	undefined	/login
 20240209	05:28:39	b50481ac-b9ca-4b0b-991d-dffcfc6f789d	DELETE	undefined	/product
 20240209	05:29:41	dd37d831-5b1f-4c85-bad1-27c0ea413632	DELETE	undefined	/product
+20240209	06:15:21	97ba8c10-a0b0-481d-a752-3264d2df96a4	POST	undefined	/login
+20240209	06:16:54	38cfc7d1-4a12-4d33-8415-367acca07bde	DELETE	undefined	/logout
+20240209	06:17:05	52a0f47c-327d-4214-8937-c8ae81c17504	PUT	undefined	/product
+20240209	06:17:11	744afc84-7e4b-4e88-8829-b973dca0bd2f	POST	undefined	/login
+20240209	06:17:17	07fe5374-8e3b-4b46-8448-8c9b4029bfe4	PUT	undefined	/product
+20240209	06:17:23	2e1c998a-eb24-44f1-80ef-ba696c864d2e	DELETE	undefined	/logout
+20240209	06:17:27	2eeec04f-6b0e-4df7-8463-6eeb7c3b3e3a	PUT	undefined	/product

@@ -31,5 +31,11 @@ const handleLogin = async (req, res) => {
         res.status(500).json({'message':'something wentt wrong'}); 
     }
 }; 
+const handleLogout = (req, res) => { 
+    const cookies = req.cookies; 
+    if (!cookies?.jwt) return res.sendStatus(204); // no content  
+    res.clearCookie('jwt', { httpOnly: true, secure: true, maxAge: 24 * 60 * 60 * 1000 }); 
+    res.sendStatus(204); 
+}; 
 
-module.exports = {handleLogin}; 
+module.exports = {handleLogin, handleLogout}; 
