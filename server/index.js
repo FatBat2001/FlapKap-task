@@ -5,7 +5,7 @@ const connectDB = require('./config/dbConnection');
 const {logger} = require('./middleware/logEvents'); 
 const verifyJWT = require('./middleware/verifyJWT');
 const PORT = process.env.PORT || 3000; 
-
+const x = require('./model/Product');
 connectDB(); 
 
 const app = express(); 
@@ -17,11 +17,12 @@ app.use(logger);
 
 app.get('/', (req, res) => { 
      res.status(200).json("hello there"); 
-
 }); 
 
 app.use('/register', require('./routes/register')); 
 app.use('/login', require('./routes/login')); 
+app.use('/product', require('./routes/product')); 
+
 app.get('/test', verifyJWT, (req, res) =>  { 
     console.log(req.roles)
     console.log(req.username);
